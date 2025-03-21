@@ -14,8 +14,15 @@
   <body>
     <header>
       <div class="container header" id="home">
-        <div class="logo"><span class="square">B</span>ekina-dev</div>
-        <nav class="link-wrapper">
+        <div class="logo"><img src="./Images/beki logo.png" alt="logo" /></div>
+
+        <div class="menu">
+          <button>
+            <div class="line"></div>
+          </button>
+        </div>
+
+        <nav class="link-wrapper d-none">
           <ul>
             <li><a href="#">about</a></li>
             <li><a href="#">skills</a></li>
@@ -23,10 +30,18 @@
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
-        <button class="btn btn-outline-success">Download cv</button>
+        <button class="d-none btn btn-outline-success">Download cv</button>
+      </div>
+      <div class="sidebar d-none">
+        <ul>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
       </div>
     </header>
-    <div class="d-grid container home-grid">
+    <div class="d-grid container">
       <div class="text-wrap">
         <div class="greeting">Hi! 👋</div>
         <div class="title">
@@ -47,30 +62,12 @@
           </button>
         </div>
       </div>
-      <div class="image-container"></div>
-    </div>
-    <section>
-      <div class="dot point-1 green-dot pos-1"></div>
-      <div class="dot point-1 green-dot pos-2"></div>
-      <div class="dot point-1 green-dot pos-3"></div>
-      <div class="dot point-1 green-dot pos-4"></div>
-      <div class="dot point-1 red-dot pos-5"></div>
-      <div class="dot point-1 red-dot pos-6"></div>
-      <div class="dot point-1 blue-dot pos-7"></div>
-      <div class="dot point-1 blue-dot pos-8"></div>
-      <div class="dot point-1 yellow-dot pos-9"></div>
-      <div class="dot point-1 yellow-dot pos-10"></div>
-      <div class="dot point-2 blue-dot pos-11"></div>
-      <div class="dot point-2 blue-dot pos-12"></div>
-      <div class="dot point-2 red-dot pos-13"></div>
-      <div class="dot point-2 green-dot pos-14"></div>
-      <div class="dot point-2 green-dot pos-15"></div>
-      <div class="dot point-2 black-dot pos-16"></div>
-    </section>
-    <div class="social-media text-green">
-      Follow me out ------- <i class="fa fa-facebook"><a href="#"></a></i
-      ><i class="fa fa-instagram"><a href="#"></a></i
-      ><i class="fa fa-linkedin"><a href="#"></a></i>
+      <div class="image-container">
+        <!-- <div class="tag left-tag">web developer</div>
+          <div class="tag bottom-tag">Front-end developer</div>
+          <div class="tag top-tag">web design</div>
+        </div> -->
+      </div>
     </div>
     <div class="scroll-up"><a href="#home" style="color: white">&uarr;</a></div>
   </body>
