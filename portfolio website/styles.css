@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 a {
@@ -19,7 +18,8 @@ a {
     --MAIN-COLOR: #0DB75F;
     --BG-COLOR: #E2FCEF;
     --WAVE-COLOR: #BDF5D8;
-    --BODY-FM: "Itim", cursive;
+    --HEADER-FM: "Itim", cursive;
+    --BODY-FM: 'Nunito', sans-serif;
     --FS-1: 20px;
     --FS-2: 16px;
     --FS-3: 14px;
@@ -55,6 +55,18 @@ body {
     background-color: var(--BG-COLOR);
 }
 
+.header,
+.title,
+.page-title,
+h1,
+h3,
+.card-title,
+.contact-action,
+.greeting,
+.greeting-contact {
+    font-family: var(--HEADER-FM);
+}
+
 /* general styles */
 .container {
     max-width: 100%;
@@ -65,10 +77,7 @@ body {
     overflow-x: hidden;
 }
 
-/* 
-.home {
-    min-height: 100vh;
-} */
+
 
 .home-elipse {
     background-image: url("./Images/mobile-elipse.svg");
@@ -374,6 +383,7 @@ nav li {
 .description {
     font-size: var(--FS-5);
     width: 90%;
+    letter-spacing: 0.3px;
 }
 
 .text-gray {
