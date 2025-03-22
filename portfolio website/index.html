@@ -13,7 +13,7 @@
 
   <body>
     <!-- Home page  -->
-    <div class="home">
+    <div class="home" id="home">
       <div class="home-elipse"></div>
       <header>
         <div class="container header" id="home">
@@ -29,26 +29,34 @@
 
           <nav class="link-wrapper d-none">
             <ul>
-              <li><a href="#">about</a></li>
-              <li><a href="#">skills</a></li>
-              <li><a href="#">projects</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contacts">contact</a></li>
             </ul>
           </nav>
-          <button class="d-none btn btn-outline-success">Download cv</button>
+          <button class="d-none btn btn-outline-success">
+            <a
+              href="./Images/Blue and purple gradient modern cv job resume.pdf"
+              target="_blank"
+              download
+            >
+              Download CV</a
+            >
+          </button>
         </div>
         <div class="sidebar">
           <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contacts">contact</a></li>
           </ul>
         </div>
       </header>
       <div class="d-grid container home-grid">
         <div class="text-wrap">
-          <div class="greeting">Hi! 👋</div>
+          <div class="greeting">Hi 👋</div>
           <div class="title">
             I'm a<span class="text-green">
               Creative<br />
@@ -60,9 +68,11 @@
             solve their problem and to make them competitive.
           </div>
           <div class="btn-container">
-            <button class="btn btn-success"><a href="#">Contact me </a></button>
+            <button class="btn btn-success">
+              <a href="#" class="">Contact me </a>
+            </button>
             <button class="btn">
-              <a href="#"> View Portfolio </a
+              <a href="#" class="btn-empty"> View Portfolio </a
               ><span class="text-green" style="font-size: 20px"> &#8599;</span>
             </button>
           </div>
@@ -79,20 +89,21 @@
         <i class="fa fa-linkedin"></i><i class="fa fa-github"></i
         ><i class="fa fa-telegram"></i>
       </div>
-      <div class="down-angle"><img src="./Images/Line 4.svg" alt="" /></div>
-      <div class="scroll-up">
-        <a href="#home" style="color: white">&uarr;</a>
-      </div>
+      <div class="down-angle"><img src="./Images/Line 4.svg" alt="down" /></div>
+
+      <a href="#home" style="color: white">
+        <div class="scroll-up">&uarr;</div></a
+      >
     </div>
     <!-- About page  -->
-    <div class="about">
-      <div class="about-title">
+    <div class="about frames" id="about">
+      <div class="page-title">
         <img src="./Images/dot.svg" alt="dot" />
         <h1>About</h1>
       </div>
 
       <div class="d-grid container about">
-        <div class="">
+        <div class="item">
           <h3>Web Developer And Designer</h3>
           <div class="description">
             I’ve specialized in crafting intuitive programs with cutting-edge
@@ -114,9 +125,183 @@
             <div class="dot"></div>
           </div>
         </div>
-        <div class="image-container-2">
+        <div class="image-container-2 item">
           <img src="./Images/Ellipse 13.png" alt="bereket" />
         </div>
+      </div>
+    </div>
+
+    <!--Skills page-->
+    <div id="skills" class="frames">
+      <div class="page-title">
+        <img src="./Images/dot.svg" alt="dot" />
+        <h1>Skills</h1>
+      </div>
+
+      <div class="skills-grid container">
+        <div class="bar-container">
+          <div>
+            <div class="ber-title">HTML5</div>
+            <div class="bar"><div class="bar-loading html-loading"></div></div>
+          </div>
+          <div>
+            <div class="ber-title">CSS3</div>
+            <div class="bar"><div class="bar-loading css-loading"></div></div>
+          </div>
+          <div>
+            <div class="ber-title">JS</div>
+            <div class="bar"><div class="bar-loading js-loading"></div></div>
+          </div>
+        </div>
+        <div class="bar-container">
+          <div>
+            <div class="ber-title">BOOTSTRAP 5</div>
+            <div class="bar">
+              <div class="bar-loading bootstrap-loading"></div>
+            </div>
+          </div>
+          <div>
+            <div class="ber-title">PHP</div>
+            <div class="bar"><div class="bar-loading php-loading"></div></div>
+          </div>
+          <div class="tools">
+            <img src="./Images/🦆 icon _figma_.svg" alt="figma" />
+            <img src="./Images/🦆 icon _vs_.svg" alt="vs code" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects page-->
+    <div id="projects" class="frames">
+      <div class="page-title">
+        <img src="./Images/dot.svg" alt="dot" />
+        <h1>Projects</h1>
+      </div>
+      <div class="card-grid container">
+        <div class="card">
+          <div class="card-img">
+            <img src="./Images/restaurant.png" alt="restaurant website" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Restaurant Website</div>
+            <div class="card-description">
+              A sleek and modern restaurant web page designed to captivate users
+              and deliver an exceptional browsing experience.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="./Images/stadium-mobile.png"
+              alt="stadium website"
+              style="width: auto"
+            />
+            <img
+              src="./Images/stadium-desktop.png"
+              alt="stadium website"
+              style="width: 70%; height: auto"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Stadium Website</div>
+            <div class="card-description">
+              A full-stack stadium management website built with PHP, MySQL,
+              HTML, CSS, and JS. It offers seamless booking, event and orders
+              management.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./Images/restaurant.png" alt="Portfolio website" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Portfolio Website</div>
+            <div class="card-description">
+              The site you are right now : built with htm and css
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contacts" class="frames container">
+      <div class="text-green greeting-contact">
+        <span class="line"></span> say hello 👋
+      </div>
+
+      <div class="contact-action">Let's &nbsp;Work <br />together!!</div>
+      <div class="description">
+        I'm always happy to have a conversation whether it's for a potential
+        project request, to get some advice, to ask a question or just to
+        network, my inbox is always open. I'll get back to you ASAP
+      </div>
+      <div class="address">
+        <div class="info">
+          <img src="./Images/home-address.svg" alt="home" />Addis Ababa,
+          Ethiopia
+        </div>
+        <div class="info">
+          <a href="mailto:bereketdesalegn097@gmail.com">
+            <img
+              src="./Images/🦆 icon _mail_.svg"
+              alt="email"
+            />bereketdesalegn097@gmail.com</a
+          >
+        </div>
+        <div class="info">
+          <a href="tel:+2519-70-34-4833">
+            <img
+              src="./Images/🦆 icon _phone_.svg"
+              alt="phone"
+            />+2519-70-34-4833
+          </a>
+        </div>
+      </div>
+
+      <form>
+        <div>
+          <input
+            type="text"
+            name="username"
+            id="userName"
+            placeholder="Name: "
+          />
+          <label for="userName"
+            ><img src="./Images/user.svg" alt="user"
+          /></label>
+        </div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="Email: " />
+          <label for="email"
+            ><img src="./Images/🦆 icon _mail_.svg" alt="email"
+          /></label>
+        </div>
+        <div>
+          <textarea
+            type="text"
+            name="textarea"
+            id="textArea"
+            rows="5"
+            placeholder="Write your message here: "
+          ></textarea>
+          <label for="textArea"
+            ><img src="./Images/🦆 icon _message text_.svg" alt="message"
+          /></label>
+        </div>
+        <div>
+          <button class="btn btn-success" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="frames copyright">
+      <div class="text-gray">&copy; 2025 Bekina dev. All Rights Reserved.</div>
+      <div class="social-media d-none">
+        <i class="fa fa-linkedin"></i><i class="fa fa-github"></i
+        ><i class="fa fa-telegram"></i>
       </div>
     </div>
   </body>
