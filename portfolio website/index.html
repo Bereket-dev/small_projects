@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="shortcut icon" href="./Images/beki logo.png" type="image/x-icon">
   </head>
 
   <body>
@@ -30,7 +31,7 @@
           <nav class="link-wrapper d-none">
             <ul>
               <li><a href="#about">about</a></li>
-              <li><a href="#skills">skills</a></li>
+              <li><a href="./index.html#skills">skills</a></li>
               <li><a href="#projects">projects</a></li>
               <li><a href="#contacts">contact</a></li>
             </ul>
@@ -69,10 +70,10 @@
           </div>
           <div class="btn-container">
             <button class="btn btn-success">
-              <a href="#" class="">Contact me </a>
+              <a href="#contacts" class="">Contact me </a>
             </button>
             <button class="btn">
-              <a href="#" class="btn-empty"> View Portfolio </a
+              <a href="#projects" class="btn-empty"> View Portfolio </a
               ><span class="text-green" style="font-size: 20px"> &#8599;</span>
             </button>
           </div>
@@ -236,7 +237,7 @@
       <div class="description">
         I'm always happy to have a conversation whether it's for a potential
         project request, to get some advice, to ask a question or just to
-        network, my inbox is always open. I'll get back to you ASAP
+        network, my inbox is always open. I'll get back to you ASAP.
       </div>
       <div class="address">
         <div class="info">
@@ -263,7 +264,7 @@
 
       <form>
         <div>
-          <input
+          <input required
             type="text"
             name="username"
             id="userName"
@@ -274,13 +275,13 @@
           /></label>
         </div>
         <div>
-          <input type="email" name="email" id="email" placeholder="Email: " />
+          <input required type="email" name="email" id="email" placeholder="Email: " />
           <label for="email"
             ><img src="./Images/🦆 icon _mail_.svg" alt="email"
           /></label>
         </div>
         <div>
-          <textarea
+          <textarea required
             type="text"
             name="textarea"
             id="textArea"

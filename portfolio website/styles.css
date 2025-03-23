@@ -558,24 +558,85 @@ nav li {
     border-radius: 15px;
 }
 
+
+
 .html-loading {
-    width: var(--HTML-PERCENT);
+    width: 0%;
+    animation: loading1 5s forwards  ease;
 }
 
 .css-loading {
-    width: var(--CSS-PERCENT);
+    width: 0%;
+    animation: loading2 5s 1s forwards  ease;
 }
 
 .js-loading {
-    width: var(--JS-PERCENT);
+    width: 0%;
+    animation: loading3 5s 2s forwards  ease;
 }
 
 .bootstrap-loading {
-    width: var(--BOOTSTRAP-PERCENT);
+    width: 0%;
+    animation: loading4 5s 3s forwards  ease;
 }
 
 .php-loading {
-    width: var(--PHP-PERCENT);
+    width: 0%;
+    animation: loading5 5s 4s forwards  ease;
+}
+
+@keyframes loading1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--HTML-PERCENT);
+    }
+}
+
+
+@keyframes loading2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--CSS-PERCENT);
+    }
+}
+
+
+@keyframes loading3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--JS-PERCENT);
+    }
+}
+
+
+@keyframes loading4 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--BOOTSTRAP-PERCENT);
+    }
+}
+
+
+@keyframes loading5 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--PHP-PERCENT);
+    }
 }
 
 .tools {
@@ -617,11 +678,14 @@ nav li {
     display: flex;
     align-items: center;
     height: var(--CARD-IMG-HEIGHT);
+    overflow: hidden;
 }
 
 .card-img img {
     width: 100%;
     max-height: 100%;
+    transition: all 1s;
+    object-fit: cover;
 }
 
 .card-body {
@@ -636,6 +700,10 @@ nav li {
 
 .card-description {
     font-size: var(--FS-5);
+}
+
+:is(.card:hover) img {
+    transform: scale(1.1);
 }
 
 /*contact */
@@ -655,7 +723,7 @@ nav li {
 
 
 .contact-action {
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     font-size: var(--FS-1);
 }
 
@@ -695,8 +763,8 @@ input,
 textarea {
     outline: none;
     border: 1px solid var(--MAIN-COLOR);
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: calc(var(--INPUT-WIDTH) / 25);
+    padding: 15px;
     width: 100%;
 }
 
@@ -711,8 +779,9 @@ form>div {
 label {
     position: absolute;
     z-index: 5;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: 0;
+    transform: translateY(50%);
 }
 
 form .btn-success {
@@ -721,6 +790,18 @@ form .btn-success {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: calc(var(--INPUT-WIDTH) / 25);
+}
+
+form .btn-success:hover {
+    background-color: var(--MAIN-COLOR);
+    color: white;
+
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: all 0.5s ease;
 }
 
 /*copy right*/
